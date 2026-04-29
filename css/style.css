@@ -5,43 +5,119 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
-background-color: #ffdefd;
-padding: 20px;
+body {
+    background-color: #ffdefd;
+    padding: 20px;
 }
 
 
 /* Selector de etiqueta: Pinta el fondo de TODO el <main> */
 main {
-background-color: #b5efff;
-padding: 20px;
+    background-color: #b5efff;
+    padding: 20px;
 }
 
 p {
-background-color: #48ff94;
-padding: 20px;
+    background-color: #48ff94;
+    padding: 20px;
 }
+
 /* Selector de clase: Solo afecta al párrafo con class="texto-destacado" */
 .texto-destacado {
-color: #ff5722;
-font-weight: bold;
+    color: #ff5722;
+    font-weight: bold;
 }
 
 /* Selector de ID: Solo afecta a la barra de navegación con id="menu-principal" */
+/* Estilos para el menú de navegación desplegable */
+
 #menu-principal {
-background-color: #333;
-padding: 10px;
+    background: linear-gradient(135deg, #e31b23 0%, #c62828 100%);
+    /* Degradado rojo */
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-/* Selector de ID: Solo afecta a la barra de navegación con id="menu-principal" */
-#Destacado{
-background-color: #f2c1c1;
-padding: 10px;
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item>a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.menu-item>a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 5px 5px;
+    z-index: 1001;
+}
+
+.dropdown-content li {
+    list-style: none;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-content li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #e31b23;
+    color: #fff;
+}
+
+
+
+#Destacado {
+    background-color: #f2c1c1;
+    padding: 10px;
+}
+
 /* Tipografia*/
 .titulo {
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   font-size: 4rem;
-   text-shadow: 2px 2px 4px #aba1a1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px #aba1a1;
 }
 
 /*EJEMPLO MODELO CAJA*/
