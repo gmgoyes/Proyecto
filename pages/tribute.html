@@ -1,152 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <title>Diario de Vampiros</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Creepster&family=Cinzel+Decorative&family=Crimson+Text&family=UnifrakturCook:wght@700&family=Roboto+Slab&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Cinzel+Decorative&family=Crimson+Text&family=UnifrakturCook:wght@700&family=Roboto+Slab&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      color: white;
+              background: url("../Images/fondo de diario.jpg") no-repeat center center fixed;
 
-      /* Imagen de fondo */
-      background: url("../Images/fondo de diario.jpg") no-repeat center center fixed;
-      background-size: cover;
-
-      /* Capa oscura encima para que el texto se lea bien */
-      background-color: rgba(0, 0, 0, 0.7);
-      background-blend-mode: darken;
     }
-
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 200px;
-      background-color: #1a0f1f;
-      padding-top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-right: 2px solid #b3003c;
-    }
-
-    nav a {
-      font-family: "UnifrakturCook", cursive;
-      color: #e6c9d8;
-      text-decoration: none;
-      margin: 15px 0;
-      font-size: 20px;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ff4d6d;
-    }
-
-    .content {
-      margin-left: 220px;
-      padding: 20px;
-      width: calc(100% - 220px);
-    }
-
-    h1 {
-      font-family: "Creepster", cursive;
-      font-size: 60px;
-      color: #b3003c;
-      text-shadow: 3px 3px 8px black;
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    h2 {
-      font-family: "Cinzel Decorative", serif;
-      font-size: 28px;
-      color: #d9d9d9;
-      font-style: italic;
-      text-shadow: 2px 2px 6px #660022;
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .message-box {
-      background-color: #262240;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 40px auto;
-      width: 85%;
-      box-shadow: 0px 0px 10px #660022;
-    }
-
-    .message-box .top {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-    }
-
-    .message-box img.main {
-      width: 25%;
-      max-width: 220px;
-      border-radius: 10px;
-      margin-right: 20px;
-      box-shadow: 0px 0px 15px #330011;
-    }
-
-    .message-box .text {
-      flex: 1;
-      font-family: "Crimson Text", serif;
-      font-size: 18px;
-      color: #f2f2f2;
-      text-align: justify;
-    }
-
-    .message-box h3 {
-      font-family: "Roboto Slab", serif;
-      font-size: 22px;
-      color: #ff4d6d;
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
-
-    .message-box ul {
-      text-align: left;
-      margin-left: 20px;
-      color: #ddd;
-    }
-
-    section {
-      margin: 40px auto;
-      width: 75%;
-      background-color: #1f1f1f;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px #b3003c;
-    }
-
-    section h3 {
-      font-family: "Roboto Slab", serif;
-      font-size: 26px;
-      color: #ff4d6d;
-      margin-bottom: 15px;
-    }
-
-    section p {
-      font-family: "Crimson Text", serif;
-      font-size: 18px;
-      color: #ddd;
-      text-align: justify;
-    }
-  </style>
+</style>
 </head>
 
-<body>
-  <nav>
+<body id="diario">
+  <nav class="lateral-menu">
     <a href="#temporada1">Temporada 1</a>
     <a href="#temporada2">Temporada 2</a>
     <a href="#temporada3">Temporada 3</a>
@@ -278,48 +147,49 @@
       </ul>
     </section>
 
-  <!-- Temporada 3 -->
-<section id="temporada3" style="background-color:#262240;">
-  <h3 style="font-family: 'Roboto Slab', serif; font-size: 28px; color:#ff4d6d;">
-    Temporada 3: Los originales
-  </h3>
+    <!-- Temporada 3 -->
+    <section id="temporada3" style="background-color:#262240;">
+      <h3 style="font-family: 'Roboto Slab', serif; font-size: 28px; color:#ff4d6d;">
+        Temporada 3: Los originales
+      </h3>
 
-  <!-- Imagen de la temporada 3 alineada a la izquierda y más grande -->
-  <img src="../Images/Tempora.3.jpg" alt="Imagen Diario de Vampiros"
-       style="float:left; width:450px; max-width:100%; height:auto; margin:0 20px 15px 0; border-radius:10px; box-shadow:0px 0px 12px #000;">
+      <!-- Imagen de la temporada 3 alineada a la derecha y más grande -->
+      <img src="../Images/Tempora.3.jpg" alt="Imagen Diario de Vampiros"
+        style="float:right; width:450px; max-width:100%; height:auto; margin:0 0 15px 20px; border-radius:10px; box-shadow:0px 0px 12px #000;">
 
-  <p>
-    La tercera temporada expande la historia hacia la poderosa familia Mikaelson, los vampiros originales,
-    cuyo legado y poder ancestral revelan nuevas amenazas. Stefan, bajo la influencia de Klaus, se convierte
-    en el “Destripador”, mientras Damon y Elena enfrentan sentimientos cada vez más intensos. La trama explora
-    los orígenes de la inmortalidad y las tensiones entre los hermanos Salvatore, mientras los vínculos con
-    los Originales redefinen el destino de Mystic Falls.
-  </p>
-  <p><strong>Fecha de emisión:</strong> 2011–2012</p>
-  <p><strong>Episodios:</strong> 22</p>
+      <p>
+        La tercera temporada expande la historia hacia la poderosa familia Mikaelson, los vampiros originales,
+        cuyo legado y poder ancestral revelan nuevas amenazas. Stefan, bajo la influencia de Klaus, se convierte
+        en el “Destripador”, mientras Damon y Elena enfrentan sentimientos cada vez más intensos. La trama explora
+        los orígenes de la inmortalidad y las tensiones entre los hermanos Salvatore, mientras los vínculos con
+        los Originales redefinen el destino de Mystic Falls.
+      </p>
+      <p><strong>Fecha de emisión:</strong> 2011–2012</p>
+      <p><strong>Episodios:</strong> 22</p>
 
-  <p><strong>Personajes que se mantienen:</strong></p>
-  <ul>
-    <li>Elena Gilbert</li>
-    <li>Stefan Salvatore</li>
-    <li>Damon Salvatore</li>
-    <li>Caroline Forbes</li>
-    <li>Bonnie Bennett</li>
-  </ul>
+      <p><strong>Personajes que se mantienen:</strong></p>
+      <ul>
+        <li>Elena Gilbert</li>
+        <li>Stefan Salvatore</li>
+        <li>Damon Salvatore</li>
+        <li>Caroline Forbes</li>
+        <li>Bonnie Bennett</li>
+      </ul>
 
-  <p><strong>Nuevos personajes:</strong></p>
-  <ul>
-    <li>Rebekah Mikaelson</li>
-    <li>Mikael</li>
-  </ul>
+      <p><strong>Nuevos personajes:</strong></p>
+      <ul>
+        <li>Rebekah Mikaelson</li>
+        <li>Mikael</li>
+      </ul>
 
-  <p><strong>Hechos importantes:</strong></p>
-  <ul>
-    <li>Se revela la historia de los Originales.</li>
-    <li>Stefan se convierte en el “Destripador”.</li>
-    <li>La relación entre Elena y Damon se intensifica.</li>
-  </ul>
-</section>
+      <p><strong>Hechos importantes:</strong></p>
+      <ul style="clear:both;">
+        <li>Se revela la historia de los Originales.</li>
+        <li>Stefan se convierte en el “Destripador”.</li>
+        <li>La relación entre Elena y Damon se intensifica.</li>
+      </ul>
+    </section>
+
 
 
     <!-- Temporada 4 -->
@@ -327,6 +197,11 @@
       <h3 style="font-family: 'Crimson Text', serif; font-size: 28px; color:#ff4d6d;">
         Temporada 4: La transformación
       </h3>
+
+      <!-- Imagen de la temporada 4 alineada a la izquierda y más pequeña -->
+      <img src="../Images/temporada 4.jpg" alt="Imagen Diario de Vampiros"
+        style="float:left; width:220px; max-width:100%; height:auto; margin:0 20px 15px 0; border-radius:10px; box-shadow:0px 0px 10px #000;">
+
       <p>
         La cuarta temporada marca un cambio radical en la vida de Elena, quien completa su transición a vampira
         y debe aprender a controlar sus nuevos instintos. La búsqueda de la cura para el vampirismo se convierte
@@ -353,12 +228,14 @@
       </ul>
 
       <p><strong>Hechos importantes:</strong></p>
-      <ul>
+      <ul style="clear:both;">
         <li>Elena completa su transición a vampira.</li>
         <li>La búsqueda de la cura se convierte en el eje central.</li>
         <li>La aparición de Silas cambia el rumbo de la historia.</li>
       </ul>
     </section>
+
+
 
 
   </div>
