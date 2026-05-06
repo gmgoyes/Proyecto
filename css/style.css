@@ -1,138 +1,297 @@
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      color: white;
+/* 🌐 Estilos SOLO para la primera página (Curso Desarrollo Web) */
+#curso {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #f2f2f2;
+  font-family: "Crimson Text", serif;
+}
 
-      /* Imagen de fondo */
-      background-size: cover;
+/* Encabezado */
+#curso header {
+  background-color: #1a0f1f;
+  color: #e6c9d8;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #b3003c;
+}
 
-      /* Capa oscura encima para que el texto se lea bien */
-      background-color: rgba(0, 0, 0, 0.7);
-      background-blend-mode: darken;
-    }
+#curso header h1 {
+  font-family: "Creepster", cursive;
+  font-size: 48px;
+  color: #b3003c;
+  text-shadow: 2px 2px 6px black;
+}
+
+#curso header h3 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 20px;
+  color: #d9d9d9;
+  font-style: italic;
+}
+
+/* Menú principal */
+#curso #menu-principal {
+  background-color: #262240;
+  padding: 10px 0;
+}
+
+#curso .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#curso .menu-item {
+  position: relative;
+}
+
+#curso .menu-item a {
+  display: block;
+  padding: 10px 20px;
+  color: #e6c9d8;
+  text-decoration: none;
+  font-family: "UnifrakturCook", cursive;
+  transition: color 0.3s;
+}
+
+#curso .menu-item a:hover {
+  color: #ff4d6d;
+}
+
+/* Dropdown */
+#curso .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1f1f1f;
+  min-width: 180px;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #660022;
+}
+
+#curso .dropdown-content li a {
+  padding: 10px;
+  color: #ddd;
+}
+
+#curso .menu-item:hover .dropdown-content {
+  display: block;
+}
+
+/* Contenedor principal con fondo */
+#curso .contenido-principal {
+  margin: 20px auto;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #b3003c;
+
+  /* Fondo con imagen */
+  background: url("../Images/tecnologia.jpg") no-repeat center center;
+  background-size: cover;
+
+  /* Texto encima del fondo */
+  color: #f2f2f2;
+  position: relative;
+}
+
+/* Capa oscura para contraste */
+#curso .contenido-principal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  z-index: 0;
+}
+
+#curso .contenido-principal * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Sección y artículos dentro del main */
+#curso section {
+  margin: 20px auto;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px #b3003c;
+}
+
+#curso article h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 22px;
+  color: #ff4d6d;
+  margin-bottom: 10px;
+}
+
+#curso article p {
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+  color: #ddd;
+  text-align: justify;
+}
+
+/* Aside */
+#curso aside {
+  background-color: #262240;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px #330011;
+  text-align: center;
+}
+
+#curso aside h2 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 22px;
+  color: #ff4d6d;
+  text-shadow: 2px 2px 6px #660022;
+}
+
+/* Footer */
+#curso footer {
+  background-color: #1a0f1f;
+  color: #e6c9d8;
+  text-align: center;
+  padding: 25px;
+  border-top: 2px solid #b3003c;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: 2px 2px 6px #660022;
+}
 
 
-    .lateral-menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 200px;
-      background-color: #1a0f1f;
-      padding-top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-right: 2px solid #b3003c;
-    }
 
-    nav a {
-      font-family: "UnifrakturCook", cursive;
-      color: #e6c9d8;
-      text-decoration: none;
-      margin: 15px 0;
-      font-size: 20px;
-      transition: color 0.3s;
-    }
+/* 🧛 Estilos SOLO para la segunda página (Diario de Vampiros) */
+#diario {
+  display: flex;
+  color: white;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
+}
 
-    nav a:hover {
-      color: #ff4d6d;
-    }
+#diario .lateral-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #1a0f1f;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid #b3003c;
+}
 
-    .content {
-      margin-left: 220px;
-      padding: 20px;
-      width: calc(100% - 220px);
-    }
+#diario nav a {
+  font-family: "UnifrakturCook", cursive;
+  color: #e6c9d8;
+  text-decoration: none;
+  margin: 15px 0;
+  font-size: 20px;
+  transition: color 0.3s;
+}
 
-    h1 {
-      font-family: "Creepster", cursive;
-      font-size: 60px;
-      color: #b3003c;
-      text-shadow: 3px 3px 8px black;
-      text-align: center;
-      margin-top: 30px;
-    }
+#diario nav a:hover {
+  color: #ff4d6d;
+}
 
-    h2 {
-      font-family: "Cinzel Decorative", serif;
-      font-size: 28px;
-      color: #d9d9d9;
-      font-style: italic;
-      text-shadow: 2px 2px 6px #660022;
-      text-align: center;
-      margin-top: 10px;
-    }
+#diario .content {
+  margin-left: 220px;
+  padding: 20px;
+  width: calc(100% - 220px);
+}
 
-    .message-box {
-      background-color: #262240;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 40px auto;
-      width: 85%;
-      box-shadow: 0px 0px 10px #660022;
-    }
+#diario h1 {
+  font-family: "Creepster", cursive;
+  font-size: 60px;
+  color: #b3003c;
+  text-shadow: 3px 3px 8px black;
+  text-align: center;
+  margin-top: 30px;
+}
 
-    .message-box .top {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-    }
+#diario h2 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 28px;
+  color: #d9d9d9;
+  font-style: italic;
+  text-shadow: 2px 2px 6px #660022;
+  text-align: center;
+  margin-top: 10px;
+}
 
-    .message-box img.main {
-      width: 25%;
-      max-width: 220px;
-      border-radius: 10px;
-      margin-right: 20px;
-      box-shadow: 0px 0px 15px #330011;
-    }
+#diario .message-box {
+  background-color: #262240;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px auto;
+  width: 85%;
+  box-shadow: 0px 0px 10px #660022;
+}
 
-    .message-box .text {
-      flex: 1;
-      font-family: "Crimson Text", serif;
-      font-size: 18px;
-      color: #f2f2f2;
-      text-align: justify;
-    }
+#diario .message-box .top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
 
-    .message-box h3 {
-      font-family: "Roboto Slab", serif;
-      font-size: 22px;
-      color: #ff4d6d;
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
+#diario .message-box img.main {
+  width: 25%;
+  max-width: 220px;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: 0px 0px 15px #330011;
+}
 
-    .message-box ul {
-      text-align: left;
-      margin-left: 20px;
-      color: #ddd;
-    }
+#diario .message-box .text {
+  flex: 1;
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+  color: #f2f2f2;
+  text-align: justify;
+}
 
-    section {
-      margin: 40px auto;
-      width: 75%;
-      background-color: #1f1f1f;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px #b3003c;
-    }
+#diario .message-box h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 22px;
+  color: #ff4d6d;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
-    section h3 {
-      font-family: "Roboto Slab", serif;
-      font-size: 26px;
-      color: #ff4d6d;
-      margin-bottom: 15px;
-    }
+#diario .message-box ul {
+  text-align: left;
+  margin-left: 20px;
+  color: #ddd;
+}
 
-    section p {
-      font-family: "Crimson Text", serif;
-      font-size: 18px;
-      color: #ddd;
-      text-align: justify;
-    }
+#diario section {
+  margin: 40px auto;
+  width: 75%;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #b3003c;
+}
 
+#diario section h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 26px;
+  color: #ff4d6d;
+  margin-bottom: 15px;
+}
 
-
-
+#diario section p {
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+  color: #ddd;
+  text-align: justify;
+}
